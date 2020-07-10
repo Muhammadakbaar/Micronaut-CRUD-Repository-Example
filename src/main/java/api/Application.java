@@ -1,4 +1,4 @@
-package com.example;
+package api;
 
 import io.micronaut.runtime.Micronaut;
 

@@ -1,21 +1,6 @@
 micronaut:
-  server:
-    cors:
-      enabled: true
-      configurations:
-        web:
-          allowedOrigins:
-            - '*'
-          allowedHeaders:
-            - Content-type
-            - Authorization
-          allowedMethods:
-            - POST
-            - PUT
-            - GET
-            - DELETE
   application:
-    name: api
+    name: test
   security:
     enabled: true
     endpoints:
@@ -29,35 +14,20 @@ micronaut:
         signatures:
           secret:
             generator:
-              secret: naoseiquequeeuvootaaquimaiquiinfernoessecagulotemquesermuitogrande
-
-rabbitmq:
-  uri: amqp://localhost:5672
+              secret: wiodjaowidjaowijdaiwjdalijwdlaiwjdlaiwjdlaiwjd
 
 datasources:
   default:
-    url: jdbc:mysql://localhost:3306/api?useSSL=false&createDatabaseIfNotExists=true
-    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testDatabase?useSSL=false&createDatabaseIfNotExists=true
     username: root
     password: ''
-    schema-generate: CREATE_DROP
-    dialect: MYSQL
+    driverClassName: com.mysql.cj.jdbc.Driver
+
 jpa:
   default:
     properties:
       hibernate:
-        bytecode:
-          provider: none
         hbm2ddl:
           auto: update
----
-eureka:
-  client:
-    registration:
-      enabled: true
-    defaultZone: "${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}"
----
-endpoints:
-  health:
-    enabled: true
-    details-visible: ANONYMOUS
+        show_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect

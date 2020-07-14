@@ -1,4 +1,4 @@
 FROM adoptopenjdk/openjdk11-openj9:jdk-11.0.1.13-alpine-slim
-COPY build/libs/api-*-all.jar api.jar
+COPY target/test-*.jar test.jar
 EXPOSE 8080
-CMD java -Dcom.sun.management.jmxremote -noverify ${JAVA_OPTS} -jar api.jar
+CMD java -Dcom.sun.management.jmxremote -noverify ${JAVA_OPTS} -jar test.jar

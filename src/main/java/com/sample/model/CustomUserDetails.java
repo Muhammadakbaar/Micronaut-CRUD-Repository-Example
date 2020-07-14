@@ -1,4 +1,4 @@
-package com.pedro.model;
+package com.sample.model;
 
 import io.micronaut.security.authentication.UserDetails;
 

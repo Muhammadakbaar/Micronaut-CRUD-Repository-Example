@@ -1,4 +1,4 @@
-package com.pedro.config;
+package com.sample.config;
 
 import io.micronaut.security.authentication.providers.PasswordEncoder;
 

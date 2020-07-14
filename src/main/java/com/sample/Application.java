@@ -1,4 +1,4 @@
-package com.pedro;
+package com.sample;
 
 import io.micronaut.runtime.Micronaut;
 

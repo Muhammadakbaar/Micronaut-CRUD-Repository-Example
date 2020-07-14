@@ -18,10 +18,10 @@ micronaut:
 
 datasources:
   default:
-    url: jdbc:mysql://localhost:3306/testDatabase?useSSL=false&createDatabaseIfNotExists=true
-    username: root
-    password: ''
-    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:postgresql://localhost:5432/sample
+    username: sitamvan
+    password: '01111997'
+    driverClassName: org.postgresql.Driver
 
 jpa:
   default:

@@ -1,4 +1,4 @@
-package com.pedro.model;
+package com.sample.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;

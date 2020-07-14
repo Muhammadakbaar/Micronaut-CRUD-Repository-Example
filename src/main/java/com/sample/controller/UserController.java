@@ -1,8 +1,8 @@
-package com.pedro.controller;
+package com.sample.controller;
 
-import com.pedro.config.BCryptPasswordEncoder;
-import com.pedro.model.User;
-import com.pedro.repository.UserRepository;
+import com.sample.config.BCryptPasswordEncoder;
+import com.sample.model.User;
+import com.sample.repository.UserRepository;
 import io.micronaut.http.annotation.*;
 import io.micronaut.security.annotation.Secured;
 import io.micronaut.security.token.jwt.validator.AuthenticationJWTClaimsSetAdapter;

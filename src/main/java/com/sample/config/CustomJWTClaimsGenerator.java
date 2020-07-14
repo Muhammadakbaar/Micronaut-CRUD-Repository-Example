@@ -1,7 +1,7 @@
-package com.pedro.config;
+package com.sample.config;
 
 import com.nimbusds.jwt.JWTClaimsSet;
-import com.pedro.model.CustomUserDetails;
+import com.sample.model.CustomUserDetails;
 import io.micronaut.context.annotation.Replaces;
 import io.micronaut.runtime.ApplicationConfiguration;
 import io.micronaut.security.authentication.UserDetails;

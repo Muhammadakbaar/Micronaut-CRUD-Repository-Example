@@ -1,6 +1,6 @@
-package com.pedro.repository;
+package com.sample.repository;
 
-import com.pedro.model.User;
+import com.sample.model.User;
 import io.micronaut.data.annotation.Repository;
 import io.micronaut.data.repository.CrudRepository;
 

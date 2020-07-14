@@ -1,8 +1,8 @@
-package com.pedro.config;
+package com.sample.config;
 
-import com.pedro.model.CustomUserDetails;
-import com.pedro.model.User;
-import com.pedro.repository.UserRepository;
+import com.sample.model.CustomUserDetails;
+import com.sample.model.User;
+import com.sample.repository.UserRepository;
 import io.micronaut.security.authentication.AuthenticationFailed;
 import io.micronaut.security.authentication.AuthenticationProvider;
 import io.micronaut.security.authentication.AuthenticationRequest;
